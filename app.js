@@ -1,31 +1,42 @@
 (function (){
 'use strict' ;
 
-angular.module('NameCalculator',[])
+angular.module('DietCalculator',[])
 
-.controller('NameCalculatorController',function($scope){
-    $scope.name = "" ;
-    $scope.totalValue = 0 ;
+.controller('DietCalculatorController', DCC);
 
-    $scope.displayNumeric = function () {
-        var totalNameValue = calculatNumericForString($scope.name) ;
-        $scope.totalValue = totalNameValue ;
+    DCC.$inject = ['$scope'] ;
+    function DCC($scope){
+
+    $scope.lunch = "" ;
+    
+    $scope.displayResult = function () {
+        if ($scope.lunch === "")
+            $scope.LunchResult = "Please enter Data First"
+        else
+            $scope.LunchResult = calculatLunchForString($scope.lunch) ;
     };
-
-
-    function calculatNumericForString(string){
-        var totalStringValue = 0 ;
+    
+     function calculatLunchForString(string){
+        var totalLunchValue = 0 ;
         for (var i=0; i < string.length;i++){
-            totalStringValue += string.charCodeAt(i) ;
-        }
+            if (string.charAt(i) === ",")
+            totalLunchValue++ ;
+        } 
 
-        return totalStringValue ;
+
+        if (totalLunchValue > 2)
+            return "Too much!" ;
+        else
+            return "Enjoy!"; 
+
         
 
-    }
+    } 
 
-});
+};
 
 
 
 })();
+
