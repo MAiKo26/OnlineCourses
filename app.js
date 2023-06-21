@@ -5,8 +5,8 @@ angular.module('DietCalculator',[])
 
 .controller('DietCalculatorController', DCC);
 
-    DCC.$inject = ['$scope'] ;
-    function DCC($scope){
+    DCC.$inject = ['$scope','$filter'] ;
+    function DCC($scope,$filter){
 
     $scope.lunch = "" ;
     
@@ -26,7 +26,7 @@ angular.module('DietCalculator',[])
 
 
         if (totalLunchValue > 2)
-            return "Too much!" ;
+            return $filter('uppercase')("Too much!") ;
         else
             return "Enjoy!"; 
 

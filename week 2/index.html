@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <script src="angular.js"></script>
+    <script src="app.js" ></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body ng-app="CheckList">
+
+    <div><h1>Welcome to my CheckList App</h1></div>
+
+    
+    <br>    <br>    <br>    <br> 
+
+    <div ng-controller="ToBuyController as showList"> 
+        <div><h3>To Buy List</h3></div>
+        <div ng-if="showList.checking()">Everything is bought! </div>
+        <li ng-repeat="item in showList.items"> Buy {{ item.quantity }} {{ item.name }} <button ng-click="showList.transferItem($index);">Bought</button> </li>
+    </div>
+
+    <br>    <br>    <br>    <br> 
+
+    <div ng-controller="AlreadyBoughtController as showList">
+        <div><h3>Already Bought List</h3></div>
+        <li ng-repeat="item in showList.items"> Bought {{item.quantity}} {{item.name}}  </li>
+        <div ng-if="showList.checking()">Nothing Bought yet</div>
+    </div>
+
+    
+</body>
+</html>
