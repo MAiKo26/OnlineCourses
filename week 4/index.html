@@ -1,28 +1,41 @@
-<!doctype html>
-<html lang="en" ng-app="MenuApp">
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
   <head>
-
-    <title>Narrow Down Your Menu Choice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="javascript/angular.js"></script>
-	  <script src="javascript/app.js"></script>
-    <script></script>
-
+    <meta charset="utf-8">
+    <title>Restaurant Menu App</title>
   </head>
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+          <nav>
+              <ul class="nav nav-pills pull-right">
+                  <li ui-sref-active="active" ui-sref="home" role="presentation"><a href="#">Home</a></li>
+                  <li ui-sref-active="active" ui-sref="categories" role="presentation"><a href="#">Categories</a></li>
+              </ul>
+          </nav>
+          <h3>Restaurant Menu App</h3>
+      </div>
+      <ui-view></ui-view>
+  </div>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
 
 
-<body>
 
-    <h1>Welcome to our Restaurant ! (We don't have cookies here)</h1>
+    <!-- 'ShoppingList' module artifacts -->
+    <script src="javascript/module.data.js"></script>
+    <script src="javascript/module.menuapp.js"></script>
+    <script src="javascript/controller.categories.js"></script>
+    <script src="javascript/controller.items.js"></script>
+    <script src="javascript/component.categories.js"></script>
+    <script src="javascript/component.items.js"></script>
+    <script src="javascript/service.menudata.js"></script>
 
-    <div>
-      <a ui-sref="ListofCategories">list of categories</a>
-    </div>
+    <!-- Routes -->
+    <script src="javascript/routes.js"></script>
 
-    <ui-view></ui-view>
-  
-</body>
-
-
+  </body>
 </html>
