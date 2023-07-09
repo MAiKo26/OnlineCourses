@@ -9,8 +9,8 @@
     signupCtrl.menuItems = menuItems;
     console.log(signupCtrl.menuItems);
 
-    signupCtrl.submit = function () {
-      var itemFound = false;
+    signupCtrl.CheckDish = function () {
+      signupCtrl.itemFound = false;
       signupCtrl.itemNotFound = false;
       for (var categoryKey in menuItems) {
         var category = menuItems[categoryKey];
@@ -24,25 +24,25 @@
             Item.short_name.toLowerCase() ===
             signupCtrl.user.favoriteDish.toLowerCase()
           ) {
-            itemFound = true;
+            signupCtrl.itemFound = true;
             signupCtrl.user.favoriteDishFull = Item;
             break;
           }
-          if (itemFound) {
+          if (signupCtrl.itemFound) {
             break;
           }
         }
-        if (itemFound) {
+        if (signupCtrl.itemFound) {
           break;
         }
       }
-
-      if (itemFound) {
+      signupCtrl.itemNotFound = !signupCtrl.itemFound;
+    };
+    signupCtrl.submit = function () {
+      if (signupCtrl.itemFound) {
         signupCtrl.completed = true;
         GlobalUserService.user = signupCtrl.user;
         console.log(signupCtrl.user);
-      } else {
-        signupCtrl.itemNotFound = true;
       }
     };
   }

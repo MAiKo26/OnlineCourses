@@ -58,12 +58,13 @@
           placeholder="Enter your favorite dish menu number"
           required
           ng-model="signupCtrl.user.favoriteDish"
+          ng-change="signupCtrl.CheckDish()"
         />
       </div>
       <div>
         <button
           ng-click="signupCtrl.submit()"
-          ng-disabled="regForm.$invalid"
+          ng-disabled="regForm.$invalid && !signupCtrl.itemNotFound"
           class="btn btn-primary"
         >
           Submit
