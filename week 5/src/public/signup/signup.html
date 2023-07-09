@@ -2,61 +2,82 @@
   <h2 id="menu-categories-title" class="text-center">Sign Up Page!</h2>
   <div class="text-center">Welcome to our Restaurant you can Sign Up Here.</div>
 
-  <form>
+  <form name="regForm" novalidate>
     <div>
-      <form>
-        <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="firstName"
-            placeholder="Enter your first name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="lastName">Last Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="lastName"
-            placeholder="Enter your last name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="Enter your email address"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="phone"
-            placeholder="Enter your phone number"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="favoriteDish">Favorite Dish (Menu Number)</label>
-          <input
-            type="number"
-            class="form-control"
-            id="favoriteDish"
-            placeholder="Enter your favorite dish menu number"
-            required
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          placeholder="Enter your first name"
+          required
+          ng-model="signupCtrl.user.firstName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          placeholder="Enter your last name"
+          required
+          ng-model="signupCtrl.user.lastName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter your email address"
+          required
+          ng-model="signupCtrl.user.email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="phone"
+          placeholder="Enter your 8 digit phone number in format ########"
+          required
+          pattern="(\d{8})"
+          ng-model="signupCtrl.user.phone"
+        />
+      </div>
+      <div class="form-group">
+        <label for="favoriteDish">Favorite Dish (Menu Number)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="favoriteDish"
+          placeholder="Enter your favorite dish menu number"
+          required
+          ng-model="signupCtrl.user.favoriteDish"
+        />
+      </div>
+      <div>
+        <button
+          ng-click="signupCtrl.submit()"
+          ng-disabled="regForm.$invalid"
+          class="btn btn-primary"
+        >
+          Submit
+        </button>
+      </div>
+      <br />
+      <div>
+        <span class="alert alert-danger" ng-if="signupCtrl.itemNotFound">
+          No such menu number exists
+        </span>
+        <span class="alert alert-success" ng-if="signupCtrl.completed">
+          Your information has been saved.
+        </span>
+      </div>
     </div>
   </form>
 </div>
