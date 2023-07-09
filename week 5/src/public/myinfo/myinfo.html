@@ -1,30 +1,30 @@
 <div class="container">
   <h2 id="menu-categories-title" class="text-center">My Info Page!</h2>
-  <div class="text-center" ng-if="myinfoCtrl.exist">
-    <h3>These are your personal information:</h3>
-  </div>
-  <div>
-    <p>
-      First Name: {{ myinfoCtrl.user.firstName }}
-      <br />
-      Last Name: {{ myinfoCtrl.user.lastName }}
-      <br />
-      Email: {{ myinfoCtrl.user.email }}
-      <br />
-      Phone: {{ myinfoCtrl.user.phone }}
-      <br />
-      Favorite Dish: {{ myinfoCtrl.user.favoriteDishFull.name }}
-    </p>
+  <div ng-if="myinfoCtrl.exist">
+    <div class="text-center"><h3>These are your personal information:</h3></div>
 
-    <img
-      class="img-responsive"
-      width="250"
-      height="150"
-      ng-src="images/menu/{{ myinfoCtrl.category }}/{{ myinfoCtrl.user.favoriteDishFull.short_name }}.jpg"
-      alt="{{ myinfoCtrl.user.favoriteDishFull.name }}"
-    />
-  </div>
+    <div>
+      <p>
+        First Name: {{ myinfoCtrl.user.firstName }}
+        <br />
+        Last Name: {{ myinfoCtrl.user.lastName }}
+        <br />
+        Email: {{ myinfoCtrl.user.email }}
+        <br />
+        Phone: {{ myinfoCtrl.user.phone }}
+        <br />
+        Favorite Dish: {{ myinfoCtrl.user.favoriteDishFull.name }}
+      </p>
 
+      <img
+        class="img-responsive"
+        width="250"
+        height="150"
+        ng-src="images/menu/{{ myinfoCtrl.category }}/{{ myinfoCtrl.user.favoriteDishFull.short_name }}.jpg"
+        alt="{{ myinfoCtrl.user.favoriteDishFull.name }}"
+      />
+    </div>
+  </div>
   <div class="text-center" ng-if="!myinfoCtrl.exist">
     You need to <a ui-sref="public.signup"> Sign Up </a> first !
   </div>
