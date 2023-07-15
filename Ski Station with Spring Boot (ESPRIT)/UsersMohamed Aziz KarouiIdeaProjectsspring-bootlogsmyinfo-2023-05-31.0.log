@@ -1,17 +1,17 @@
-2023-07-12 22:46:13.252  INFO 7216 --- [main] tn.spring.springboot.Application         : Starting Application using Java 1.8.0_144 on PC-MAiKo with PID 7216 (C:\Users\Mohamed Aziz Karoui\Documents\GitHub\OnlineCourses\Ski Station with Spring Boot (ESPRIT)\target\classes started by Mohamed Aziz Karoui in C:\Users\Mohamed Aziz Karoui\Documents\GitHub\OnlineCourses\Ski Station with Spring Boot (ESPRIT))
-2023-07-12 22:46:13.262  INFO 7216 --- [main] tn.spring.springboot.Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12 22:46:14.167  INFO 7216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-07-12 22:46:14.192  INFO 7216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
-2023-07-12 22:46:14.972  INFO 7216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12 22:46:14.983  INFO 7216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12 22:46:14.983  INFO 7216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-07-12 22:46:15.203  INFO 7216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12 22:46:15.204  INFO 7216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1874 ms
-2023-07-12 22:46:15.453  INFO 7216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-07-12 22:46:15.541  INFO 7216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-07-12 22:46:15.793  INFO 7216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-07-12 22:46:16.092  INFO 7216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-07-12 22:46:17.959 ERROR 7216 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+2023-05-31 20:13:09.788  INFO 1452 --- [main] tn.spring.springboot.Application         : Starting Application using Java 1.8.0_144 on PC-MAiKo with PID 1452 (C:\Users\Mohamed Aziz Karoui\IdeaProjects\spring-boot\target\classes started by Mohamed Aziz Karoui in C:\Users\Mohamed Aziz Karoui\IdeaProjects\spring-boot)
+2023-05-31 20:13:09.798  INFO 1452 --- [main] tn.spring.springboot.Application         : No active profile set, falling back to 1 default profile: "default"
+2023-05-31 20:13:10.910  INFO 1452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31 20:13:10.937  INFO 1452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-05-31 20:13:11.773  INFO 1452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-31 20:13:11.786  INFO 1452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-31 20:13:11.787  INFO 1452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-31 20:13:12.074  INFO 1452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-31 20:13:12.074  INFO 1452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2194 ms
+2023-05-31 20:13:12.339  INFO 1452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31 20:13:12.434  INFO 1452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-31 20:13:12.697  INFO 1452 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-31 20:13:12.951  INFO 1452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-31 20:13:14.833 ERROR 1452 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
 
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
@@ -67,7 +67,7 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
 	at tn.spring.springboot.Application.main(Application.java:10) ~[classes/:na]
 
-2023-07-12 22:46:17.963  WARN 7216 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+2023-05-31 20:13:14.836  WARN 1452 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
 
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
@@ -123,9 +123,9 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
 	at tn.spring.springboot.Application.main(Application.java:10) ~[classes/:na]
 
-2023-07-12 22:46:17.999  INFO 7216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2023-07-12 22:46:19.101  INFO 7216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-07-12 22:46:20.123 ERROR 7216 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+2023-05-31 20:13:14.851  INFO 1452 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-05-31 20:13:15.968  INFO 1452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-31 20:13:16.997 ERROR 1452 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
 
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
@@ -181,15 +181,15 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
 	at tn.spring.springboot.Application.main(Application.java:10) ~[classes/:na]
 
-2023-07-12 22:46:20.128  WARN 7216 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1045, SQLState: 28000
-2023-07-12 22:46:20.129 ERROR 7216 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Access denied for user 'root'@'localhost' (using password: NO)
-2023-07-12 22:46:20.178 ERROR 7216 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
-2023-07-12 22:46:20.181  WARN 7216 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
-2023-07-12 22:46:20.185  INFO 7216 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-07-12 22:46:20.215  INFO 7216 --- [main] ConditionEvaluationReportLoggingListener : 
+2023-05-31 20:13:17.003  WARN 1452 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1045, SQLState: 28000
+2023-05-31 20:13:17.004 ERROR 1452 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Access denied for user 'root'@'localhost' (using password: NO)
+2023-05-31 20:13:17.041 ERROR 1452 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2023-05-31 20:13:17.044  WARN 1452 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2023-05-31 20:13:17.048  INFO 1452 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-31 20:13:17.081  INFO 1452 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-07-12 22:46:20.263 ERROR 7216 --- [main] o.s.boot.SpringApplication               : Application run failed
+2023-05-31 20:13:17.136 ERROR 1452 --- [main] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.27.jar:5.3.27]
@@ -257,3 +257,49 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:44) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
 	... 36 common frames omitted
 
+2023-05-31 20:18:16.501  INFO 3580 --- [main] tn.spring.springboot.Application         : Starting Application using Java 1.8.0_144 on PC-MAiKo with PID 3580 (C:\Users\Mohamed Aziz Karoui\IdeaProjects\spring-boot\target\classes started by Mohamed Aziz Karoui in C:\Users\Mohamed Aziz Karoui\IdeaProjects\spring-boot)
+2023-05-31 20:18:16.505  INFO 3580 --- [main] tn.spring.springboot.Application         : No active profile set, falling back to 1 default profile: "default"
+2023-05-31 20:18:17.756  INFO 3580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31 20:18:17.783  INFO 3580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2023-05-31 20:18:18.746  INFO 3580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-31 20:18:18.757  INFO 3580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-31 20:18:18.759  INFO 3580 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-31 20:18:19.029  INFO 3580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-31 20:18:19.029  INFO 3580 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2410 ms
+2023-05-31 20:18:19.299  INFO 3580 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31 20:18:19.382  INFO 3580 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-31 20:18:19.594  INFO 3580 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-31 20:18:19.834  INFO 3580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-31 20:18:20.129  INFO 3580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-31 20:18:20.154  INFO 3580 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-05-31 20:18:22.286  INFO 3580 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31 20:18:22.361  INFO 3580 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31 20:18:22.456  WARN 3580 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31 20:18:23.040  INFO 3580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-31 20:18:23.060  INFO 3580 --- [main] tn.spring.springboot.Application         : Started Application in 7.504 seconds (JVM running for 9.97)
+2023-05-31 20:21:31.869  INFO 3580 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31 20:21:31.872  INFO 3580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-31 20:21:31.883  INFO 3580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-31 20:22:11.947  INFO 1340 --- [main] tn.spring.springboot.Application         : Starting Application using Java 1.8.0_144 on PC-MAiKo with PID 1340 (C:\Users\Mohamed Aziz Karoui\IdeaProjects\spring-boot\target\classes started by Mohamed Aziz Karoui in C:\Users\Mohamed Aziz Karoui\IdeaProjects\spring-boot)
+2023-05-31 20:22:11.953  INFO 1340 --- [main] tn.spring.springboot.Application         : No active profile set, falling back to 1 default profile: "default"
+2023-05-31 20:22:13.023  INFO 1340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31 20:22:13.049  INFO 1340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-05-31 20:22:13.791  INFO 1340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-31 20:22:13.805  INFO 1340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-31 20:22:13.805  INFO 1340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-05-31 20:22:14.082  INFO 1340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-31 20:22:14.083  INFO 1340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2058 ms
+2023-05-31 20:22:14.362  INFO 1340 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31 20:22:14.454  INFO 1340 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-31 20:22:14.688  INFO 1340 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-31 20:22:14.928  INFO 1340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-31 20:22:15.151  INFO 1340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-31 20:22:15.169  INFO 1340 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-05-31 20:22:16.876  INFO 1340 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31 20:22:16.893  INFO 1340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31 20:22:16.951  WARN 1340 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31 20:22:17.501  INFO 1340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-31 20:22:17.521  INFO 1340 --- [main] tn.spring.springboot.Application         : Started Application in 6.352 seconds (JVM running for 8.276)
+2023-05-31 20:31:14.344  INFO 1340 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31 20:31:14.347  INFO 1340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-31 20:31:14.362  INFO 1340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
